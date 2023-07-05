@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Everything you wanted to know about Star Wars"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="./public/death-star.svg"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>SWAPI Challenge</title>
+  </head>
+
+  <body>
+    <header class="container">
+      <h1>Star Wars App</h1>
+      <p class="info">
+        Look for info on films, people, species, planets, starships and vehicles
+      </p>
+      <!-- Input Form  -->
+      <form>
+        <select name="categories" id="categories">
+          <option value="films">Films</option>
+          <option value="people">People</option>
+          <option value="species">Species</option>
+          <option value="planets">Planets</option>
+          <option value="starships">Starships</option>
+          <option value="vehicles">Vehicles</option>
+        </select>
+        <input class="input" type="text" id="search-input" />
+        <button type="submit" class="search-button" id="search-button">
+          SW
+        </button>
+      </form>
+    </header>
+
+    <!-- Results  -->
+    <main class="containerr">
+      <section name="results">
+        <p id="results__loading"></p>
+        <p id="results__note"></p>
+        <div class="results" id="results">
+          <p id="results__total"></p>
+          <ul class="results__list list" id="results__list"></ul>
+          <button type="button" class="preview" id="preview">Preview</button>
+          <button type="button" class="next" id="next">Next</button>
+        </div>
+      </section>
+      <!-- Lists  -->
+      <section name="lists">
+        <p id="list__notification"></p>
+        <p id="list__total"></p>
+        <ul class="list" id="list"></ul>
+        <p id="list__loading"></p>
+      </section>
+    </main>
+
+    <!-- Modal  -->
+    <div class="modal" id="modal">
+      <div class="modal__card">
+        <p class="modal__close" id="modal__close">X</p>
+        <p id="modal__load"></p>
+        <p id="modal__note"></p>
+        <ul class="modal__list" id="modal__list"></ul>
+      </div>
+    </div>
+
+    <script src="./js/lists.js" type="module"></script>
+    <script src="./js/results.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+  </body>
+</html>

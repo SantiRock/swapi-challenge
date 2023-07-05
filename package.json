@@ -1,0 +1,24 @@
+{
+  "name": "swapi_challenge",
+  "version": "1.0.0",
+  "description": "SWAPI Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantiRock/swapi-challenge.git"
+  },
+  "author": "Santiago Quintero ",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SantiRock/swapi-challenge/issues"
+  },
+  "homepage": "https://santirock.github.io/swapi-challenge",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "serve": "^14.2.0"
+  }
+}
